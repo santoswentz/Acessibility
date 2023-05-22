@@ -1,0 +1,148 @@
+<html>
+    <meta charset="UTF-8">
+    
+    <head>
+        <meta charset="UTF-8" lang="pt-br">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login e cadastro</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/deb335c9eb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    </head>
+    <body class="sign-in-js">
+        <div class="container">
+            <div class="content conteúdo1">
+                <div class="coluna1">
+                    <form  class="fields" >
+                        <h1>BEM VINDO DE VOLTA! <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap" rel="stylesheet"></h1>
+                        <p class="pcoluna1">Para iniciar a sessão, realize seu login. <link rel="preconnect" href="https://fonts.gstatic.com">
+                            <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+                        </p> 
+
+                        <div class="preenchimento">
+                            <button class="btn1" id="signin">ENTRAR<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
+                        </div>
+                    </form>
+                </div>
+               
+                <div class="coluna2">
+                    <form action="http://127.0.0.1:5500/sarah/home%20page/homepage.html" method="GET" class="fields2">
+                        <h2 class="title">CRIE UMA NOVA CONTA!<link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap" rel="stylesheet"></h2>
+
+                        <ul class="socialmedia">
+
+                        </ul>
+
+                        <div class="descrição">
+                            <p class="descrição">Ou utilize um email para registro.<link rel="preconnect" href="https://fonts.gstatic.com"></p>
+                        </div>
+
+                        <div class="informações">
+                            <div class="preenchimentoinfo">
+                                <label class="preenchimentoinfo">
+                                    <i class="far fa-user icon-modify"></i>
+                                    <input type="nome" name="nome de cadastro" class="nome" id="nome" placeholder="Digite seu nome" required><br>
+                                </label>     
+                            </div>
+
+                            <div class="preenchimentoinfo">
+                                <label class="preenchimentoinfo">
+                                    <i class="far fa-envelope icon-modify"></i>
+                                    <input type="nome" name="email" class="email" id="nome" placeholder="Digite seu email" required><br>
+                                </label>
+                            </div>
+
+                            <div class= "preenchimentoinfo">
+                                <label class="preenchimentoinfo">
+                                    <i class="fas fa-lock icon-modify"></i>
+                                    <input type="password" name="senha" id="senhacadastro" class="senhacadastro" placeholder="Digite sua senha" autocomplete="current-password" required><br>
+                                    
+                                    <div class= "containercheckbox">
+                                        <label class="checkbox">
+                                            <script type="text/javascript" src="mostrarsenha.js"></script>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" onclick="mostrarocultarsenha2()">
+                                                <span class="checkbox-button"><i class="far fa-eye-slash"></i></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="preenchimento">
+
+                                <div class="preenchimento">
+                                    <label class="switch2">
+                                        <div class="switch-wrapper2">
+                                            <input type="checkbox" checked> <span class="switch-button2"></span>
+                                        </div>
+                                        <span class="switch-text2">Lembrar-me <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></span><br>  </span> 
+                                    </label>
+                                </div>
+
+                                <div class="preenchimento2">
+                                    <button class="btn2"> ACESSAR <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="content conteúdo2">
+                <div class="coluna1">
+                    <form class="fields" >
+                        <h1>SEJA BEM VINDO! <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap" rel="stylesheet"></h1>
+                        <p class="pcoluna1">Não possui uma conta? Faça o seu cadastro! <link rel="preconnect" href="https://fonts.gstatic.com">
+                            <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+                        </p> 
+
+                        <div class="preenchimento">
+                            <button class="btn1" id="signup">CADASTRAR<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="coluna2">
+                    <form action="http://127.0.0.1:5500/sarah/home%20page/homepage.html" method="GET" class="fields2">
+                        <h2 class="title">FAÇA LOGIN!<link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap" rel="stylesheet"></h2>
+
+                        <div class="informações">
+                            <div class="preenchimentoinfo">
+                                <label class="preenchimentoinfo">
+                                    <i class="far fa-user icon-modify"></i>
+                                    <input type="nome" name="nome de cadastro" class="nome" id="nome" placeholder="Digite seu nome" required><br>
+                                </label>
+                            </div>
+
+                            <div class= "preenchimentoinfo">
+                                <label class="preenchimentoinfo">
+                                    <i class="fas fa-lock icon-modify"></i>
+                                    <input type="password" name="senha" id="senhacadastro" class="senhacadastro" placeholder="Digite sua senha" autocomplete="current-password" required><br>
+                                </label>
+                            </div>
+
+                            <div class= "containercheckbox">
+                                <label class="checkbox">
+                                    <script type="text/javascript" src="mostrarsenha.js"></script>
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" onclick="mostrarocultarsenha3()">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="preenchimento">
+                                </div>
+                                <div class="preenchimento2">
+                                    <button class="btn2"> ACESSAR <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="../sarah/login/signin.js"></script>
+    </body>
+</html>
