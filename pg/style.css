@@ -1,5 +1,7 @@
 /* base do projeto */
-
+:root{
+    -
+}
 html{
     margin: 0;
     padding: 0;
@@ -12,23 +14,17 @@ body{
     font-family: 'Baloo Tammudu 2', cursive;
 }
 
-
-
 /* entrar e cadastrar */
-
 
 .sign-in-js .conteúdo1 .coluna1, .sign-in-js .conteúdo1 .coluna2{
     z-index: -1;
 }
-
 .sign-in-js .conteúdo2 .coluna1{
     z-index: 140;
 }
-
 .sign-in-js .conteúdo2 .coluna2{
     z-index: 120;
 }
-
 .sign-in-js .content::before{
     left:56%;
     border-top-right-radius: 15px;
@@ -36,37 +32,22 @@ body{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     animation: slidein 2.5s;
-
     z-index: 130;
 }
-
 .sign-up-js .content::before {
     animation: slideout 2.5s;
-    
     z-index: 130;
 }
-
-
 .sign-up-js .conteúdo2 .coluna1, .sign-up-js .conteúdo2 .coluna2 {
     z-index: -1;
 }
-
 .sign-up-js .conteúdo1 .coluna1{
     z-index: 140;
 }
-
 .sign-up-js .conteúdo1 .coluna2{
     z-index: 120;
 }
-
-
-
-
 /* textos */
-
-
-
-
 h1{
     color: whitesmoke;
     font-size: 28px;
@@ -74,22 +55,18 @@ h1{
     padding: -50;
     margin-bottom: -5;
 }
-
 p {
     color: whitesmoke;
     font-size: 13px;
 }
-
-
-
 .title{
     color: #58af9b;
     font-size: 25;
     padding: -50;
     margin-bottom: 0;
     line-height: 0;
+    margin: 15px 0px;
 }
-
 .descrição{
     color: black;
     font-size: 13px;
@@ -97,12 +74,7 @@ p {
     margin-top: 0;
 }
 
-
-
-
-
 /* container e conteúdos */
-
 
 .container{
     display: flex;
@@ -110,7 +82,6 @@ p {
     align-items: center;
     height:100hv;
 }
-
 .content{
     border-radius: 15px;
     background-color: whitesmoke;
@@ -121,12 +92,8 @@ p {
     align-items: center;
     position: relative;
     box-shadow: #39777b 1px 1px 3px;
-   margin: 70px;
+    margin: 70px;
 }
-
-
-
-
 .content::before{
     content: "";
     position: absolute;
@@ -137,45 +104,29 @@ p {
     border-bottom-left-radius: 15px;
     left:0%;
 }
-
-
-
-
 .conteúdo1{
     display: flex;
 }
-
 .conteúdo2{
     display: flex;
     position:absolute;
 }
-
-
 .conteúdo1 .coluna2{
     z-index: 110;
 }
-
-
-
 .conteúdo2 .coluna1{
     order: 2;
     z-index:-1;
 }
-
 .conteúdo2 .coluna2 {
     order: 1;
     z-index: -1;
 }
-
-
-
-
 .coluna1{
     text-align: center;
     width: 44%;
     z-index: 100;
 }
-
 .coluna2 {
     text-align: center;
     width: 56%;
@@ -187,6 +138,9 @@ p {
 .informações {
     display:flex;
     flex-direction:column;
+}
+.preenchimentoinfo{
+    padding: 0px 0px;
 }
 .preenchimentoinfo > input {
     height: 35px;
@@ -206,16 +160,10 @@ p {
     color:#7f8c8d;
     padding: 0 10px;
     align-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
-
-
-
 /* botões */
-
-
 .preenchimento > button {
    border-radius: 15px;
    font-size:11px;
@@ -227,16 +175,12 @@ p {
    cursor:pointer;
    border: 1px solid whitesmoke;
 }
-
-
 .preenchimento > button:hover {
     background-color: whitesmoke;
     color:#58af9b;
     transition: 0.8s;
     cursor: pointer;
 }
-
-
 .preenchimento2 > button {
     border-radius: 15px;
     font-size:10px;
@@ -248,9 +192,7 @@ p {
     align-self: center;
     border: 1px solid #58af9b;
     cursor: pointer;
- }
- 
- 
+}
  .preenchimento2 > button:hover {
      background-color: #58af9b;
      color:whitesmoke;
@@ -258,109 +200,30 @@ p {
      cursor: pointer;
  }
 
-
-/* checkbox lembrar senha */
-
-
-
- .containerswitch{
-    margin: 0;
-    font-family: 'Baloo Tammudu 2', cursive;
-}
-
-
-.switch{
-    line-height: 0;
-}
-.switch, .switch2{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.switch .switch-wrapper, .switch2 .switch-wrapper2 {
-    display: inline-block;
-    top: 7;
-    width: 21px;
-    height: 11px;
-    position: relative;
-}
-.switch .switch-wrapper .switch-button, .switch2 .switch-wrapper2 .switch-button2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 40px;
-    background-color: #475569;
-}
-.switch .switch-wrapper input, .switch2 .switch-wrapper2 input{
-    opacity: 0;
-}
-.switch .switch-wrapper .switch-button::before, .switch2 .switch-wrapper2 .switch-button2::before{
-    content: "" ;
-    width: 10px;
-    height: 11px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    border-radius: 50%;
-    transition: 0.1s all ease;
-    background-color: rgb(245, 245, 245);
-}
-.switch .switch-wrapper input:checked + .switch-button, .switch2 .switch-wrapper2 input:checked + .switch-button2{
-    background-color: #58A721;
-}
-.switch .switch-wrapper input:checked + .switch-button::before, .switch2 .switch-wrapper2 input:checked + .switch-button2::before{
-    transform: translateX(11px);
-}
-
-
-
-.switch-text, .switch-text2{
-    font-size: 11px;
-    font-family: 'Baloo Tammudu 2', cursive;
-    margin-left: 3;
-    margin-right:0
-}
-
-
 /* animação do before */
 
 @keyframes slidein {
-
     0% {
         left: 0%;
         width: 44%;
     }
-
     25% {
         left: 5%;
         width: 40%;
     }
-
     50% {
         left: 25%;
         width: 60%;
     }
-
     75% {
         left:45%;
         width: 40%;
     }
-
     100% {
         left: 56%;
         width: 44%; 
     }
 }
-
-
-
-
 @keyframes slideout {
 
     from {
@@ -389,9 +252,6 @@ p {
     }
 }
 
-
-
-
 /* animção de conteúdo */
 .sign-in-js .conteúdo1 .coluna2 {
     z-index: 120;
@@ -412,7 +272,7 @@ p {
     }
 
     50% {
-        left: 100px;
+        left: -100px;
         opacity: .2;
     }
 
