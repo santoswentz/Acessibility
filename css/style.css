@@ -1,6 +1,10 @@
 /* base do projeto */
 :root{
     --cor1: #fff;
+    --cor2: #808080;
+    --preto: #000000;
+    --azulqnemaisazul: #303030; 
+    --brancobranco: #fff;
 }
 html{
     margin: 0;
@@ -14,53 +18,20 @@ body{
     font-family: 'Baloo Tammudu 2', cursive;
 }
 
-/* entrar e cadastrar */
-
-.sign-in-js .conteúdo1 .coluna1, .sign-in-js .conteúdo1 .coluna2{
-    z-index: -1;
-}
-.sign-in-js .conteúdo2 .coluna1{
-    z-index: 140;
-}
-.sign-in-js .conteúdo2 .coluna2{
-    z-index: 120;
-}
-.sign-in-js .content::before{
-    left:56%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    animation: slidein 2.5s;
-    z-index: 130;
-}
-.sign-up-js .content::before {
-    animation: slideout 2.5s;
-    z-index: 130;
-}
-.sign-up-js .conteúdo2 .coluna1, .sign-up-js .conteúdo2 .coluna2 {
-    z-index: -1;
-}
-.sign-up-js .conteúdo1 .coluna1{
-    z-index: 140;
-}
-.sign-up-js .conteúdo1 .coluna2{
-    z-index: 120;
-}
 /* textos */
 h1{
-    color: whitesmoke;
+    color: var(--cor1);
     font-size: 28px;
     line-height:0;
     padding: -50;
     margin-bottom: -5;
 }
 p {
-    color: whitesmoke;
+    color: var(--cor1);
     font-size: 13px;
 }
 .title{
-    color: #58af9b;
+    color: var(--cor2);
     font-size: 25;
     padding: -50;
     margin-bottom: 0;
@@ -68,7 +39,7 @@ p {
     margin: 15px 0px;
 }
 .descrição{
-    color: black;
+    color: var(--preto);
     font-size: 13px;
     line-height: 1;
     margin-top: 0;
@@ -84,20 +55,20 @@ p {
 }
 .content{
     border-radius: 15px;
-    background-color: whitesmoke;
+    background-color: var(--cor1);
     width: 70%;
     height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    box-shadow: #39777b 1px 1px 3px;
+    box-shadow: var(--azulqnemaisazul) 1px 1px 3px;
     margin: 70px;
 }
 .content::before{
     content: "";
     position: absolute;
-    background-color: #58af9b;
+    background-color: var(--azulqnemaisazul);
     width: 44%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -145,19 +116,19 @@ p {
 .preenchimentoinfo > input {
     height: 35px;
     border: none;
-    background-color: #ecf0f1;
+    background-color: var(--cor1);
     width: 100%; 
     font-size: 10px;
 }
 .preenchimentoinfo label{
-    background-color: #ecf0f1;
+    background-color: var(--cor1);
     align-items: center;
     display: inline-flex;
     margin: 4px;
     width: 56%;
 }
 .icon-modify{
-    color:#7f8c8d;
+    color:var(--cor2);
     padding: 0 10px;
     align-content: center;
     align-items: center;    
@@ -169,15 +140,15 @@ p {
    font-size:11px;
    font-weight: bold;
    text-transform: uppercase;
-   color: whitesmoke;
+   color: var(--cor1);
    padding: 5px 19px;
    background-color: transparent;
    cursor:pointer;
-   border: 1px solid whitesmoke;
+   border: 1px solid var(--cor1);
 }
 .preenchimento > button:hover {
-    background-color: whitesmoke;
-    color:#58af9b;
+    background-color: var(--cor1);
+    color:var(--azulqnemaisazul);
     transition: 0.8s;
     cursor: pointer;
 }
@@ -186,102 +157,19 @@ p {
     font-size:10px;
     font-weight: bold;
     text-transform: uppercase;
-    color:#58af9b;
+    color:var(--azulqnemaisazul);
     padding: 5px 19px;
     background-color: transparent;
     align-self: center;
-    border: 1px solid #58af9b;
+    border: 1px solid var(--azulqnemaisazul);
     cursor: pointer;
 }
  .preenchimento2 > button:hover {
-     background-color: #58af9b;
-     color:whitesmoke;
+     background-color: var(--azulqnemaisazul);
+     color: var(--cor1);
      transition: 0.8s;
      cursor: pointer;
  }
-
-/* animação do before */
-
-@keyframes slidein {
-    0% {
-        left: 0%;
-        width: 44%;
-    }
-    25% {
-        left: 5%;
-        width: 40%;
-    }
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-    75% {
-        left:45%;
-        width: 40%;
-    }
-    100% {
-        left: 56%;
-        width: 44%; 
-    }
-}
-@keyframes slideout {
-
-    from {
-       left: 56%;
-        width: 44% 
-    }
-
-    25% {
-        left: 45%;
-        width: 40%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left:5%;
-        width: 40%;
-    }
-
-    to {
-        left: 0%;
-        width: 44%; 
-    }
-}
-
-/* animção de conteúdo */
-.sign-in-js .conteúdo1 .coluna2 {
-    z-index: 120;
-    position: relative;
-    animation: deslocamento 2.5s;
-}
-
-@keyframes deslocamento {
-
-    0% {
-        left:0;
-        opacity: 1;
-    }
-
-    25% {
-        left: -80px;
-        opacity: .5;
-    }
-
-    50% {
-        left: -100px;
-        opacity: .2;
-    }
-
-    100% {
-        left: -110px;
-        opacity: 0;
-        z-index: -1;
-    }
-}
 
 .container2{
     width: 100%;
@@ -315,7 +203,7 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color: #fff;
+    color: var(--brancobranco);
     text-decoration: none;
     position: relative;
 }
@@ -328,7 +216,7 @@ nav ul li a::after{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: var(--brancobranco);
     transition: width 0.3s;
 }
 nav ul li a:hover::after{
