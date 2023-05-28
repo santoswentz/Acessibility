@@ -1,6 +1,6 @@
-<html>
+<!DOCTYPE html>
+    <html>
     <meta charset="UTF-8">
-    
     <head>
         <meta charset="UTF-8" lang="pt-br">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="../css/style.css">
         <script src="https://kit.fontawesome.com/deb335c9eb.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script src="../js/signin.js"></script>
+        <script src="../js/checkbox.js"></script>
     </head>
     <body class="sign-in-js"> 
         <!--Bem Vindo-->
@@ -36,34 +38,35 @@
                             <div class="preenchimentoinfo">
                                 <label class="preenchimentoinfo">
                                     <i class="far fa-user icon-modify"></i>
-                                    <input type="nome" name="nome de cadastro" class="nome" id="nome" placeholder="Digite seu nome" required><br>
+                                    <input type="nome" name="nomecadastro" class="nome" id="nome" placeholder="Digite seu nome" required><br>
                                 </label>     
                             </div>
                             <div class="preenchimentoinfo">
                                 <label class="preenchimentoinfo">
                                     <i class="far fa-envelope icon-modify"></i>
-                                    <input type="nome" name="email" class="email" id="nome" placeholder="Digite seu email" required><br>
+                                    <input type="nome" name="emailcadastro" class="email" id="nome" placeholder="Digite seu email" required><br>
                                 </label>
                             </div>
                             <div class= "preenchimentoinfo">
                                 <label class="preenchimentoinfo">
                                     <i class="fas fa-lock icon-modify"></i>
-                                    <input type="password" name="senha" id="senhacadastro" class="senhacadastro" placeholder="Digite sua senha" autocomplete="current-password" required><br>
+                                    <input type="password" name="senhacadastro" id="senhacadastro" class="senhacadastro" placeholder="Digite sua senha" autocomplete="current-password" required><br>
                             </div>
+<!--checkboxes-->
                             <div class="preenchimento">
                                 <div class="preenchimento">
                                     <label class="switch2">
                                         <div class="switch-wrapper2">
-                                            <input type="checkbox" value="empresa" id="checkempresa"><span class="switch-text2">E</span>
+                                            <input type="checkbox" class="checkbox" value="empresa" id="checkempresa"><span class="switch-text2">E</span>
                                         </div>
 <!--vai ir para uma pagina que obrigara entrar em contato com os donos do projeto para mais informações etc...-->
                                         <div class="switch-wrapper2">
-                                            <input type="checkbox" value="pessoa" id="checkpessoa"><span class="switch-text2">P</span>
+                                            <input type="checkbox" class="checkbox" value="pessoa" id="checkpessoa" checked><span class="switch-text2">P</span>
                                         </div>
                                     </label>
                                 </div>
                                 <div class="preenchimento2">
-                                    <button class="btn2"> ACESSAR <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
+                                    <button class="btn2" id="send"> ACESSAR <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
                                 </div>
                             </div>
                         </div>
@@ -71,6 +74,5 @@
                 </div>
             </div>
         </div>
-        <script src="../js/signin.js"></script>
     </body>
 </html>

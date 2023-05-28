@@ -1,6 +1,6 @@
 /* base do projeto */
 :root{
-    --cor1: #f1f1f1;
+    --cor1: #ffffff;
     --cor2: #808080;
     --preto: #000000;
     --azulqnemaisazul: #303030; 
@@ -145,11 +145,11 @@ p {
    background-color: transparent;
    cursor:pointer;
    border: 1px solid var(--cor1);
+   transition: 0.8s;   
 }
 .preenchimento button:hover {
     background-color: var(--cor1);
     color:var(--azulqnemaisazul);
-    transition: 0.8s;
     cursor: pointer;
 }
 
@@ -172,15 +172,15 @@ p {
      cursor: pointer;
  }
 
+
+
+/*pagina de Produtos*/
 .container2{
     width: 100%;
     height: 100vh;
-    padding: 0% 8%;
+    padding: 0%;
     position: relative;
 }
-
-
-
 nav{
     display: flex;
     width: 100%;
@@ -198,8 +198,7 @@ nav{
 }
 nav ul{
     flex: 1;
-    text-align: right;
-    padding-right: 30px;
+    float: left;
 }
 nav ul li{
     display: inline-block;
@@ -207,7 +206,7 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color: var(--brancobranco);
+    color: var(--preto);
     text-decoration: none;
     position: relative;
 }
@@ -220,7 +219,7 @@ nav ul li a::after{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--brancobranco);
+    background-color: var(--preto);
     transition: width 0.3s;
 }
 nav ul li a:hover::after{
