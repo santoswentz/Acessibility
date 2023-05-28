@@ -1,6 +1,6 @@
 /* base do projeto */
 :root{
-    --cor1: #fff;
+    --cor1: #f1f1f1;
     --cor2: #808080;
     --preto: #000000;
     --azulqnemaisazul: #303030; 
@@ -135,7 +135,7 @@ p {
 }
 
 /* botões */
-.preenchimento > button {
+.preenchimento button {
    border-radius: 15px;
    font-size:11px;
    font-weight: bold;
@@ -146,12 +146,13 @@ p {
    cursor:pointer;
    border: 1px solid var(--cor1);
 }
-.preenchimento > button:hover {
+.preenchimento button:hover {
     background-color: var(--cor1);
     color:var(--azulqnemaisazul);
     transition: 0.8s;
     cursor: pointer;
 }
+
 .preenchimento2 > button {
     border-radius: 15px;
     font-size:10px;
@@ -177,6 +178,9 @@ p {
     padding: 0% 8%;
     position: relative;
 }
+
+
+
 nav{
     display: flex;
     width: 100%;
