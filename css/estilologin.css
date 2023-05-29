@@ -58,7 +58,7 @@ p {
     align-items: center;
     position: relative;
     box-shadow: #39777b 1px 1px 3px;
-   margin: 70px;
+    margin: 70px;
 }
 .content::before{
     content: "";
@@ -80,6 +80,7 @@ p {
 .coluna1{
     text-align: center;
     width: 44%;
+    z-index: 150;
 }
 
 .coluna2 {
@@ -271,12 +272,6 @@ p {
     border-radius: 50%;
     transition: 0.1s all ease;
     background-color: rgb(245, 245, 245);
-}
-.switch .switch-wrapper input:checked + .switch-button, .switch2 .switch-wrapper2 input:checked + .switch-button2{
-    background-color: #58A721;
-}
-.switch .switch-wrapper input:checked + .switch-button::before, .switch2 .switch-wrapper2 input:checked + .switch-button2::before{
-    transform: translateX(11px);
 }
 .switch-text, .switch-text2{
     font-size: 11px;
