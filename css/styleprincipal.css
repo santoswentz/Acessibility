@@ -1,0 +1,84 @@
+:root{
+    --cor1: #ffffff;
+    --cor2: #808080;
+    --preto: #000000;
+    --azulqnemaisazul: #303030; 
+    --brancobranco: #fff;
+}
+/*geral*/
+    body{
+        background-color: var(--preto);
+        color: var(--cor1);
+    }
+    a{
+        color: var(--cor1);
+    }
+/*pagina de Produtos*/
+.container2{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    background-color: transparent; /* Define a cor de fundo transparente */
+    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    float: left;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: var(--cor1);
+    text-decoration: none;
+    position: relative;
+}
+/*Animação navbar*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor1);
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 70%;
+}
+/*Filtro de produtos*/
+.Imoveis{
+    width: 100%;
+}
+.Imoveis .filtro{
+    border: solid 1px var(--cor1);
+    width: 220px;
+    height: 350px;
+}
+.Imoveis .filtro .pesquisaimovel{
+    display: inline-block;
+}
+.checkboxfiltro{
+    
+}
