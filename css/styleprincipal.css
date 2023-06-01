@@ -75,10 +75,13 @@ nav ul li a:hover::after{
     border: solid 1px var(--cor1);
     width: 220px;
     height: 350px;
+    border-radius: 20px;
 }
 .Imoveis .filtro .pesquisaimovel{
-    display: inline-block;
+    display: block;
+    height: max-content;
+    width: max-content;
 }
 .checkboxfiltro{
-    
+    color: var(--azulqnemaisazul);
 }
