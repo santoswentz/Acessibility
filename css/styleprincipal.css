@@ -70,6 +70,8 @@ nav ul li a:hover::after{
 /*Filtro de produtos*/
 .Imoveis{
     width: 100%;
+    display: flex;
+    gap: 20px;
 }
 .Imoveis .filtro{
     border: solid 1px var(--cor1);
@@ -82,10 +84,31 @@ nav ul li a:hover::after{
     height: max-content;
     width: max-content;
 }
+label{
+    display: inline-block
+}
 .checkboxfiltro{
     color: var(--azulqnemaisazul);
 }
 /*imoveisavenda*/
 .imoveisavenda{
-    height: ;
+    height: 300px;
+    width: 250px;
+    background-color: #808080;
+    border-radius: 0px 12px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.imgimovel{
+    border-radius: 0px 12px 0px 0px;
+    height: 65%;
+    width: 100%;
+}
+.imoveldesc{
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 0px 12px;
 }
