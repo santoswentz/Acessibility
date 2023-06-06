@@ -71,7 +71,6 @@ nav ul li a:hover::after{
 .Imoveis{
     width: 100%;
     display: flex;
-    justify-content:space-evenly;
     gap: 50px;
 }
 .Imoveis .filtro{
@@ -80,13 +79,9 @@ nav ul li a:hover::after{
     height: 350px;
     border-radius: 20px;
 }
-.Imoveis .filtro .pesquisaimovel{
-    display: block;
-    height: max-content;
-    width: max-content;
-}
-label{
-    display: inline-block
+.checkboxindividual{
+    display: flex;
+    flex-direction: column;
 }
 .checkboxfiltro{
     color: var(--azulqnemaisazul);
@@ -97,22 +92,21 @@ label{
     width: 250px;
     background-image: url('../img/paisagem-analogica-da-cidade-com-edificios.jpg');
     background-size: cover;
-    border-radius: 0px 12px 0px 12px;
+    border-radius: 0px 40px;
     display: flex;
     flex-direction: column-reverse;
 }
-.imgimovel{
-    border-radius: 0px 12px 0px 0px;
-    height: 65%;
-    width: 100%;
+.imgacessibilidades{
+    height: 50px;
+    width: 50px;
 }
 .imoveldesc{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0px 0px 0px 12px;
-    background-color: transparent; /* Define a cor de fundo transparente */
+    border-radius: 0px 0px 0px 40px;
+    background-color: rgba(255, 245, 245, 0.201);
     backdrop-filter: blur(7px); /* Aplica o efeito de desfoque */
     color: #000000;
     height: 35%;
