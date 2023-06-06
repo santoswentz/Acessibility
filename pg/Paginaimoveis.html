@@ -9,28 +9,42 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <title>Document</title>
 </head>
-<body>
-  <header>
-
-  </header>
-
+<body>    
+    <nav>
+      <a href="" class="resolvendobuga"><img src="../img/2.png" alt="" class="imglogo"></a>
+        <ul>
+          <li><a href="">Comprar</a></li>
+          <li><a href="">Alugar</a></li>
+          <li><a href="">Sobre-Nós</a></li>
+        </ul>
+        <button type="button">
+          <a href=""><i class="far fa-user icone-login"></i></a>
+        </button>
+      </nav>
+      
     <section class="Imoveis">
-    <div class="filtro">
-      <form action="pesquisaimovel" class="pesquisaimovel">
-        <div class="checkboxindividual">
-          <input class="checkboxfiltro" type="checkbox" name="opcaoacessibilidade"><label>opcao1</label>
+      <fieldset>
+        <legend>Nescessidades</legend>
+      <form action="pesquisaimovel" class="filtro">
+        <div class="checkbox">
+            <input type="checkbox" name="opcaoacessibilidade">
+            <label>Rampa de acessibilidade</label> 
         </div>
-        <div class="checkboxindividual">
-          <input class="checkboxfiltro" type="checkbox" name="opcaoacessibilidade"><label>opcao1</label>
+         <div class="checkbox">
+            <input type="checkbox" name="opcaoacessibilidade">
+            <label>Corrimão em escadas/corredores</label> 
         </div>
-        <div class="checkboxindividual">
-          <input class="checkboxfiltro" type="checkbox" name="opcaoacessibilidade"><label>opcao1</label>
-        </div>
-        <div class="checkboxindividual">
-          <input class="checkboxfiltro" type="checkbox" name="opcaoacessibilidade"><label>opcao1</label>
-        </div>
+        <div class="checkbox">
+           <input type="checkbox" name="opcaoacessibilidade">
+           <label>Elevadores com manutenção garantida</label> 
+       </div>
+       <div class="checkbox">
+          <input type="checkbox" name="opcaoacessibilidade">
+          <label>Moradias proximas a hospitais</label> 
+      </div>
+      </fieldset>
       </form>
-    </div>
+
     <!--imoveis-->
     <div class="imoveisavenda">
       <div class="imoveldesc"> 

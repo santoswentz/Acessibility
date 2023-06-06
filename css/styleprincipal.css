@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@100;200 & display=swap');
 :root{
     --cor1: #ffffff;
     --cor2: #808080;
@@ -9,9 +10,7 @@
     body{
         background-color: var(--preto);
         color: var(--cor1);
-    }
-    a{
-        color: var(--cor1);
+        font-family: 'Montserrat', sans-serif;
     }
 /*pagina de Produtos*/
 .container2{
@@ -22,43 +21,43 @@
 }
 nav{
     display: flex;
-    width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 5px 0;
-    background-color: transparent; /* Define a cor de fundo transparente */
-    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
-
-}
-.logo{
-    width: 120px;
-    cursor: pointer;
-}
-.cart-icon{
-    width: 30px;
-    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
 nav ul{
-    flex: 1;
-    float: left;
+    display: flex;
+    gap: 45px;
 }
 nav ul li{
-    display: inline-block;
     list-style: none;
-    margin: 10px 30px;
 }
 nav ul li a{
     color: var(--cor1);
     text-decoration: none;
     position: relative;
 }
+.imglogo{
+    height: 80px;
+    width: 80px;
+}
+.icone-login{
+    color:var(--azulqnemaisazul);
+    align-content: center;
+    align-items: center;  
+    width: 50px;
+    height: 50;
+}
+.resolvendobuga{
+    width: min-content;
+}
 /*Animação navbar*/
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
+    height: 1px;
     position: absolute;
-    bottom: -5px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--cor1);
@@ -67,25 +66,41 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 70%;
 }
-/*Filtro de produtos*/
+/*section imoveis*/
 .Imoveis{
     width: 100%;
     display: flex;
     gap: 50px;
 }
+/*Filtro de produtos*/
 .Imoveis .filtro{
-    border: solid 1px var(--cor1);
-    width: 220px;
-    height: 350px;
-    border-radius: 20px;
-}
-.checkboxindividual{
+    width: 300px;
+    height: 450px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
 }
-.checkboxfiltro{
-    color: var(--azulqnemaisazul);
+fieldset{
+    border-radius: 20px;
+    border: solid 2px var(--cor1);
 }
+legend{
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+}
+legend::after{
+    content: '';
+    width: 80%;
+    height: 3px;
+    bottom: -3px;
+    position: absolute;
+    left: 10%;
+    background-color: var(--azulqnemaisazul);
+}
+
 /*imoveisavenda*/
 .imoveisavenda{
     height: 300px;
@@ -111,3 +126,6 @@ nav ul li a:hover::after{
     color: #000000;
     height: 35%;
 }
+
+
+
