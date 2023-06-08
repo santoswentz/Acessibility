@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .contaninercheck{
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 10%;
+        }
+        .switch{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .switch .switch-texto{
+            padding-right: 0.3rem;
+            font-size: 1.2rem;
+        }
+        .switch .switch-wrap{
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            position: relative;
+        }
+        .switch .switch-wrap .botaocheckbox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 40px;
+            background-color: rgb(58, 59, 59);
+        }
+        .switch .switch-wrap input{
+            opacity: 0;
+            z-index: 1;
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+        .switch .switch-wrap .botaocheckbox::before{
+            content: "";
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            left: 4px;
+            bottom: 4px;
+            border-radius: 50%;
+            transition: .4s all ease;
+            background-color: aliceblue;
+        }
+        .switch .switch-wrap input:checked + span {
+            background-color: green;
+        }
+        .switch .switch-wrap input:checked + .botaocheckbox::before{
+            transform: translateX(26px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="containercheck">
+        <label for="" class="switch">
+            <span class="switch-texto">Texto chechkbox</span>
+            <div class="switch-wrap">
+                <input type="checkbox"/>
+                <span class="botaocheckbox"></span>
+            </div>
+        </label>
+    </div>
+</body>
+</html>
