@@ -167,7 +167,7 @@ p {
     align-items: center;  
 }
 /* botões */
-.preenchimento > button {
+.preenchimento button {
    border-radius: 15px;
    font-size:11px;
    font-weight: bold;
@@ -179,7 +179,7 @@ p {
    border: 1px solid var(--cor1);
     transition: 0.8s;
 }
-.preenchimento > button:hover {
+.preenchimento button:hover {
     background-color: var(--cor1);
     color: var(--azulqnemaisazul);
     cursor: pointer;
