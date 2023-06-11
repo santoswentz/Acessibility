@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleprincipal.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/deb335c9eb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Document</title>
 </head>
 <body class="bodyimo">    
@@ -17,7 +19,7 @@
           <li><a href="">Alugar</a></li>
           <li><a href="">Sobre-Nós</a></li>
         </ul>
-          <a href="login.html"><i class="far fa-user icon-modify"></i></a>
+          <a href="login.html"><i class="far fa-user icon-modify navbar"></i></a>
       </nav>
       
     <section class="Imoveis">
@@ -26,7 +28,7 @@
         <form action="pesquisaimovel" class="filtro">
 
           <label for="" class="switch">
-            <span class="switch-texto">Texto chechkbox</span>
+            <span class="switch-texto">Deficiencias Visuais</span>
             <div class="switch-wrap">
                 <input type="checkbox"/>
                 <span class="botaocheckbox"></span>
@@ -34,7 +36,7 @@
           </label>
         
           <label for="" class="switch">
-            <span class="switch-texto">Texto chechkbox</span>
+            <span class="switch-texto">Idoso</span>
             <div class="switch-wrap">
                 <input type="checkbox"/>
                 <span class="botaocheckbox"></span>
@@ -42,7 +44,23 @@
           </label>
         
           <label for="" class="switch">
-            <span class="switch-texto">Texto chechkbox</span>
+            <span class="switch-texto">Nanismo</span>
+            <div class="switch-wrap">
+                <input type="checkbox"/>
+                <span class="botaocheckbox"></span>
+            </div>
+          </label>
+
+          <label for="" class="switch">
+            <span class="switch-texto">Gigantismo, Acromegalia</span>
+            <div class="switch-wrap">
+                <input type="checkbox"/>
+                <span class="botaocheckbox"></span>
+            </div>
+          </label>
+
+          <label for="" class="switch">
+            <span class="switch-texto">Cadeirante</span> <!--precisa de elevador e -->
             <div class="switch-wrap">
                 <input type="checkbox"/>
                 <span class="botaocheckbox"></span>
@@ -53,65 +71,179 @@
       </fieldset>
 
     <!--imoveis-->
-
-
-    <div class="imoveisavenda">
-      <div class="imoveldesc"> 
+    <div class="card">
+      <img src="../img/paisagem-analogica-da-cidade-com-edificios.jpg" id="imgbackcard" alt="">
+      <div class="imoveldesc">  
         <div class="divimg">
           <img src="../img/gnomo.png" alt="" class="imgacessibilidades"> 
           <img src="../img/incapacidade.png" alt="" class="imgacessibilidades">
           <img src="../img/velho.png" alt="" class="imgacessibilidades">
         </div>
-        <div class="imoveiscarac">
-          <h2>Localização do Imovel</h2>
+        <div class="cardtxt">
+          <h2>Casa/Apartamento</h2>
           <h3>M²</h3>
           <h3>R$200.000,00</h3>
-        </div>
+        </div> 
+      </div> 
+      <div class="info"><!--tudo aq fica no hover-->
+          <h1>Rua *******</h1>
+          <div class="descricoes">
+            <div class="uncdesc">
+              <i class="fa-solid fa-bed"></i>
+              <p>1 Dormitório</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-solid fa-car"></i>
+              <p>2 Vagas</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-regular fa-building"></i>
+              <p>4° Andar</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-solid fa-shower"></i>
+              <p>1 Chuveiro</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-solid fa-maximize"></i>
+              <p>72m²</p>
+            </div>
+            <div class="uncdesc" id="centraliza">
+              <a href=""><button type="button" class="button">Saiba Mais</button></a>
+            </div>
+          </div>
       </div>
-    </div>
-
-
-    <div class="imoveisavenda">
-      <div class="imoveldesc"> 
+  </div>
+    
+    <div class="card">
+      <img src="../img/paisagem-analogica-da-cidade-com-edificios.jpg" id="imgbackcard" alt="">
+      <div class="imoveldesc">  
         <div class="divimg">
           <img src="../img/gnomo.png" alt="" class="imgacessibilidades"> 
           <img src="../img/incapacidade.png" alt="" class="imgacessibilidades">
           <img src="../img/velho.png" alt="" class="imgacessibilidades">
         </div>
-        <div class="imoveiscarac">
-          <h2>Localização do Imovel</h2>
-          <h3>Metros Quadrados</h3>
-          <h3>R$200.000</h3>
-        </div>
+        <div class="cardtxt">
+          <h2>Casa/Apartamento</h2>
+          <h3>M²</h3>
+          <h3>R$200.000,00</h3>
+        </div> 
+      </div> 
+      <div class="info"><!--tudo aq fica no hover-->
+          <h1>Endereço *******</h1>
+          <div class="descricoes">
+            <div class="uncdesc">
+              <i class="fa-solid fa-bed"></i>
+              <p>1 Dormitório</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-solid fa-car"></i>
+              <p>2 Vagas</p>
+            </div>
+            <div class="uncdesc ">
+              <i class="fa-regular fa-building desabilitado"></i>
+              <p>Sem Andares</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-solid fa-shower"></i>
+              <p>1 Chuveiro</p>
+            </div>
+            <div class="uncdesc">
+              <i class="fa-solid fa-maximize"></i>
+              <p>72m²</p>
+            </div>
+            <div class="uncdesc" id="centraliza">
+              <a href=""><button type="button" class="button">Saiba Mais</button></a>
+            </div>
+          </div>
       </div>
+  </div>
+  <div class="card">
+    <img src="../img/paisagem-analogica-da-cidade-com-edificios.jpg" id="imgbackcard" alt="">
+    <div class="imoveldesc">  
+      <div class="divimg">
+        <img src="../img/gnomo.png" alt="" class="imgacessibilidades"> 
+        <img src="../img/incapacidade.png" alt="" class="imgacessibilidades">
+        <img src="../img/velho.png" alt="" class="imgacessibilidades">
+      </div>
+      <div class="cardtxt">
+        <h2>Casa/Apartamento</h2>
+        <h3>M²</h3>
+        <h3>R$200.000,00</h3>
+      </div> 
+    </div> 
+    <div class="info"><!--tudo aq fica no hover-->
+        <h1>Rua *******</h1>
+        <div class="descricoes">
+          <div class="uncdesc">
+            <i class="fa-solid fa-bed"></i>
+            <p>1 Dormitório</p>
+          </div>
+          <div class="uncdesc">
+            <i class="fa-solid fa-car"></i>
+            <p>2 Vagas</p>
+          </div>
+          <div class="uncdesc">
+            <i class="fa-regular fa-building"></i>
+            <p>4° Andar</p>
+          </div>
+          <div class="uncdesc">
+            <i class="fa-solid fa-shower"></i>
+            <p>1 Chuveiro</p>
+          </div>
+          <div class="uncdesc">
+            <i class="fa-solid fa-maximize"></i>
+            <p>72m²</p>
+          </div>
+          <div class="uncdesc" id="centraliza">
+            <a href=""><button type="button" class="button">Saiba Mais</button></a>
+          </div>
+        </div>
     </div>
-    <div class="imoveisavenda">
-      <div class="imoveldesc"> 
-        <div class="divimg">
-          <img src="../img/gnomo.png" alt="" class="imgacessibilidades"> 
-          <img src="../img/incapacidade.png" alt="" class="imgacessibilidades">
-          <img src="../img/velho.png" alt="" class="imgacessibilidades">
-        </div>
-        <div class="imoveiscarac">
-          <h2>Localização do Imovel</h2>
-          <h3>Metros Quadrados</h3>
-          <h3>R$200.000</h3>
-        </div>
-      </div>
-    </div>    <div class="imoveisavenda">
-      <div class="imoveldesc"> 
-        <div class="divimg">
-          <img src="../img/gnomo.png" alt="" class="imgacessibilidades"> 
-          <img src="../img/incapacidade.png" alt="" class="imgacessibilidades">
-          <img src="../img/velho.png" alt="" class="imgacessibilidades">
-        </div>
-        <div class="imoveiscarac">
-          <h2>Localização do Imovel</h2>
-          <h3>Metros Quadrados</h3>
-          <h3>R$200.000</h3>
-        </div>
-      </div>
+</div>
+<div class="card">
+  <img src="../img/paisagem-analogica-da-cidade-com-edificios.jpg" id="imgbackcard" alt="">
+  <div class="imoveldesc">  
+    <div class="divimg">
+      <img src="../img/gnomo.png" alt="" class="imgacessibilidades"> 
+      <img src="../img/incapacidade.png" alt="" class="imgacessibilidades">
+      <img src="../img/velho.png" alt="" class="imgacessibilidades">
     </div>
+    <div class="cardtxt">
+      <h2>Casa/Apartamento</h2>
+      <h3>M²</h3>
+      <h3>R$200.000,00</h3>
+    </div> 
+  </div> 
+  <div class="info"><!--tudo aq fica no hover-->
+      <h1>Rua *******</h1>
+      <div class="descricoes">
+        <div class="uncdesc">
+          <i class="fa-solid fa-bed"></i>
+          <p>1 Dormitório</p>
+        </div>
+        <div class="uncdesc">
+          <i class="fa-solid fa-car"></i>
+          <p>2 Vagas</p>
+        </div>
+        <div class="uncdesc">
+          <i class="fa-regular fa-building"></i>
+          <p>4° Andar</p>
+        </div>
+        <div class="uncdesc">
+          <i class="fa-solid fa-shower"></i>
+          <p>1 Chuveiro</p>
+        </div>
+        <div class="uncdesc">
+          <i class="fa-solid fa-maximize"></i>
+          <p>72m²</p>
+        </div>
+        <div class="uncdesc" id="centraliza">
+          <a href=""><button type="button" class="button">Saiba Mais</button></a>
+        </div>
+      </div>
+  </div>
+</div>
   </section>
 </body>
 </html>

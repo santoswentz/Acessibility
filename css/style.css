@@ -11,26 +11,25 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
+.sign-in-js{
     background-image: url("../img/background10.jpg");
     background-size: cover;
     font-family: 'Baloo Tammudu 2', cursive;
 }
 
 /* textos */
-h1{
+.sign-in-js h1{
     color: var(--cor1);
     font-size: 28px;
     line-height:0;
     padding: -50;
     margin-bottom: -5;
 }
-p {
+.sign-in-js p {
     color: var(--cor1);
     font-size: 13px;
 }
-.title{
+.sign-in-js .title{
     color: var(--preto);
     font-size: 25;
     padding: -50;
@@ -38,7 +37,7 @@ p {
     line-height: 0;
     margin: 15px 0px;
 }
-.descrição{
+.sign-in-js .descrição{
     color: var(--preto);
     font-size: 13px;
     line-height: 1;
@@ -135,7 +134,7 @@ p {
 }
 
 /* botões */
-.preenchimento button {
+button {
    border-radius: 15px;
    font-size:11px;
    font-weight: bold;
@@ -147,7 +146,7 @@ p {
    border: 1px solid var(--cor1);
    transition: 0.8s;   
 }
-.preenchimento button:hover {
+button:hover {
     background-color: var(--cor1);
     color:var(--azulqnemaisazul);
     cursor: pointer;
