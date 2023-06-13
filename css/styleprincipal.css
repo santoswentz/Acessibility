@@ -7,7 +7,7 @@
 }
 /*geral*/
     .bodyimo{
-        background-color: var(--preto);
+        background: linear-gradient(to top, var(--preto), var(--azulqnemaisazul));
         color: var(--cor1);
         font-family: 'Montserrat', sans-serif;
     }
@@ -197,7 +197,7 @@ legend::after{
     width: 100%;
     height: 100%;
     border-radius: 0px 40px;
-    background-image: linear-gradient(180deg,rgba(128, 128, 128, 0.681),rgba(48, 48, 48, 0.681));
+    background-image: linear-gradient(50deg,rgba(64, 63, 63, 0.681),rgba(48, 48, 48, 0.681));
     z-index: 2;
     transition: 0.9s all;
     opacity: 0;
