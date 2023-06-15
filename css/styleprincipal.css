@@ -357,3 +357,48 @@ footer ul li{
     bottom: -15px;
     position: relative;
 }
+/*index css*/
+
+.index header{
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.index table{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    padding: 2cm 15%;
+}
+
+.index .barra{
+    border: #716969 solid 2px;
+    width: 0px;
+    height: 350px;
+}
+
+.index .titulo h2{
+    font-size: 700%;
+    text-align: left;
+    padding-right: 1cm;
+}
+
+.index .titulo h3{
+    font-size: 500%;
+    max-width: 200px;
+    background-color: #fff;
+    border-radius: 60px;
+    color: #000;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.index .texto p {
+    text-align: justify;
+    padding: 1cm;
+    font-size: 200%;
+}
