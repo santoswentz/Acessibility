@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@100;200 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 :root{
     --cor1: #ffffff;
     --cor2: #808080;
@@ -288,5 +292,41 @@ legend::after{
 }
 .desabilitado + p{
     text-decoration: line-through;
+    color: var(--cor2);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    margin: 0;
+    height: 150px;
+    flex-direction: row;
+}
+footer svg{
+    width: 100vh;
+    flex: 1;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+footer ul{
+    list-style: none;
+}
+footer ul .fab{
+    transform: scale(1.7);
+    object-fit: contain;    
+    color:var(--cor2);
+    padding: 10px;
+    align-content: center;
+    align-items: center;    
+}
+.CONTATO{
+    display: flex;
+    justify-content: center;
+}
+.direitos p {
+    text-align: center;
     color: var(--cor2);
 }
