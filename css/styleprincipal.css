@@ -321,12 +321,30 @@ footer ul .fab{
     padding: 10px;
     align-content: center;
     align-items: center;    
+    transition: 0.8s;
+}
+footer ul .fab:hover{
+    color: #fff;
+}
+footer ul li{
+    margin: 15px;
+    color: var(--cor2);
 }
 .CONTATO{
     display: flex;
     justify-content: center;
 }
+.direitos{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .direitos p {
     text-align: center;
     color: var(--cor2);
+}
+.svgbugado{
+    bottom: -15px;
+    position: relative;
 }
