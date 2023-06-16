@@ -57,6 +57,19 @@ const filters = [...new Set(btns.map((btn)=>
         category: 'gigantismo'
     },
     {
+      id: 2,
+      image: '../img/casa2.jpg',
+      localizacao: 'rua da abobrinha 341',
+      price: '130.000',
+      casaouapto: '2', /* casa = 1 apto = 2 */
+      m2: '65',
+      banheiros: '2',
+      qntandares: '1',
+      qntdormitorios: '3',
+      vagascarro: '1',
+      category: 'gigantismo'
+  },
+    {
         id: 3,
         image: '../img/casa3.png',
         localizacao: 'rua da assombração 987',
@@ -83,7 +96,7 @@ const filters = [...new Set(btns.map((btn)=>
         category: 'gigantismo'
     },
     {
-        id: 5,
+        id: 4,
         image: '../img/casa5.png',
         localizacao: 'rua da felicidade 545',
         price: '290.000',
@@ -115,16 +128,14 @@ const filteritems = (a)=>{
 const displayItem = (items) => {
     document.getElementById('root').innerHTML = items.map((item)=>
     {
-        var {image, m2, price, localizacao, casaouapto, qntandares, qntdormitorios, banheiros, m2, vagascarro} = item;
+        var {icones, image, m2, price, localizacao, casaouapto, qntandares, qntdormitorios, banheiros, m2, vagascarro} = item;
         return(
             `
             <div class='card'>
               <img src="${image}" id="imgbackcard" alt="">
               <div class="imoveldesc">  
                 <div class="divimg">
-                  <img src='../img/gnomo.png' class='imgacessibilidades'> 
-                  <img src='../img/incapacidade.png'  class='imgacessibilidades'>
-                  <img src='../img/velho.png'  class='imgacessibilidades'>
+                  <img src='${icones}' class='imgacessibilidades'>
                 </div>
                 <div class='cardtxt'>
                   <h2>${localizacao}</h2>
@@ -156,7 +167,7 @@ const displayItem = (items) => {
                       <p>${m2}M²</p>
                     </div>
                     <div class='uncdesc' id='centraliza'>
-                      <a href=''><button class='button'>Saiba Mais</button></a>
+                      <a href='../pg/produto-especifico.html'><button class='button'>Saiba Mais</button></a>
                     </div>
                   </div>
               </div>

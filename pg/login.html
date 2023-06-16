@@ -56,24 +56,25 @@
                             <div class="preenchimentoinfo">
                                 <label class="preenchimentoinfo">
                                     <i class="far fa-user icon-modify"></i>
-                                    <input type="nome" name="nome de cadastro" class="nome" id="nome" placeholder="Digite seu nome" required><br>
+                                    <input name="username" class="nome" id="login" placeholder="Digite seu nome" required><br>
                                 </label>
                             </div>
 
                             <div class= "preenchimentoinfo">
                                 <label class="preenchimentoinfo">
                                     <i class="fas fa-lock icon-modify"></i>
-                                    <input type="password" name="senha" id="senhacadastro" class="senhacadastro" placeholder="Digite sua senha" autocomplete="current-password" required><br>
+                                    <input type="password" name="password" id="senha" class="senhacadastro" placeholder="Digite sua senha" autocomplete="current-password" required><br>
                                 </label>
                             </div>
 
                                 <div class="preenchimento2">
-                                    <button class="btn2"> ACESSAR <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"></button>
+                                    <input class="btn" type="submit" placeholder="Entrar" onclick="logar(); return false"> <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"> 
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
         </div>
+        <script src="../js/login.js"></script>
     </body>
 </html>

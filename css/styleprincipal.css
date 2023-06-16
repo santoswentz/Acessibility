@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 a{
     list-style: none;
@@ -27,21 +28,23 @@ a{
     position: relative;
 }
 nav{
-    display: flex;
+    all: unset;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 nav ul{
     display: flex;
-    gap: 45px;
+    margin: 0;
+    gap: 40px;
 }
 nav ul li{
     list-style: none;
 }
 nav ul li a{
     color: var(--cor1);
-    text-decoration: none;
+    text-decoration: none !important;
     position: relative;
     transition: 0.8s;
     font-size: 15px;
@@ -50,8 +53,8 @@ nav ul li a:hover{
     color: var(--cor2); 
 }
 .imglogo{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     color: var(--cor1);
     transition: 1.1s;
 }
@@ -62,7 +65,7 @@ nav ul li a:hover{
 nav .icon-modify {
     color:var(--cor1);
     scale: 2.0;
-    margin: 20px;
+    margin: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +201,7 @@ legend::after{
     transition: 0.9s ease-in-out;
     border-radius: 0px 40px;
     flex-direction: column-reverse; 
+    margin: 30px;
 }
 .card:hover{
     transform: scale(1.02);
@@ -415,14 +419,6 @@ footer ul li{
 
 /**/
 
-   /* base do projeto */
-   :root{
-    --cor1: #ffffff;
-    --cor2: #808080;
-    --preto: #000000;
-    --azulqnemaisazul: #303030; 
-    --brancobranco: #fff;
-}
 html{
     margin: 0;
     padding: 0;
@@ -587,3 +583,294 @@ button:hover {
      transition: 0.8s;
      cursor: pointer;
  }
+ #body{
+    background-color: #121212;    
+}
+
+.tamanho-carousel{
+    width: 50%;
+    margin: auto;
+}
+
+.info .adobgl{
+    font-size: 16px;
+    background-color: #3b85df;
+    padding: 16px 4%;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 3%;
+    border-radius: 10px;
+    transition: all 300ms linear;
+}
+
+.info .adobgl:hover{
+    text-decoration: none;
+    color: #a0a0a0;
+    padding: 16px 5%;
+}
+
+.info .itens{
+    display: inline-block;
+}
+
+.info ul{
+    text-align: center;
+}
+
+.info ul li{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 3%;
+}
+
+.info ul li img{
+    width: 50px;
+}
+
+.info ul li p{
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+.dados h3, .preco h3{
+    color: #3b85df;
+    font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dados p{
+    font-size: 22px;
+    color: #7d7d7d;
+}
+
+.dados h4{
+    color: #3b85df;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.preco a{
+    color: #fff;
+    background-color: #3b85df;
+    padding: 10px 36px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.preco a:hover{
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #a0a0a0;
+    transition: all 300ms linear;
+}
+
+.dados{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.preco{
+    right: 10%;
+    text-align: right;
+    position: absolute;
+}
+
+.dados, .preco{
+    display: inline-block;
+}
+
+.hr-divisao{
+    border: #5c647671 solid 1px;
+    width: 85%;
+}
+
+.caracteristicas{
+    margin: 0% 5%;
+}
+
+.caracteristicas h2{
+    color: #3b85df;
+    font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caracteristicas div{
+    display: inline-flex;
+    gap: 20px;
+}
+.item p{
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.item{
+    margin-left: 2%;
+}
+
+.sobre-imovel{
+    margin: 0% 5%;
+}
+
+.sobre-imovel h2{
+    color: #3b85df;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px 5px;
+}
+
+.sobre-imovel p{
+    color: #7d8596;
+    font-size: 16px;
+}
+
+.formpro{
+    border: #5c647671 solid 2px;
+    border-radius: 15px;
+    margin: auto;
+    width: 90%;
+}
+
+.input-file{
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    background-image: url(../img/add.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    border-radius: 50px;
+}
+
+input[type="file"]{
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+}
+
+.info input[type="number"]{
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 150%;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.input-pequeno{
+    width: 50px;
+}
+
+.input-grande{
+    width: 100px;
+}
+
+.info label{
+    margin: 10px;
+    display: list-item;
+    color: #fff;
+    font-size: 20px;
+}
+
+.info .sol{
+    margin-right: 10px;
+}
+
+.tipo-imovel{
+    color: #3b85df;
+    font-size: 26px;
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bairro-cidade{
+    display: inline-flex;
+}
+
+.bairro-cidade input[type="text"]{
+    color: #7d7d7d;
+    font-size: 22px;
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.bairro-cidade p{
+    margin: 5px;
+}
+
+.preco-inline{
+    display: inline-flex;
+}
+
+.preco-inline input[type="number"]{
+    color: #3b85df;
+    font-size: 26px;
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.RS{
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.caracteristicas .item input[type="text"]{
+    margin-left: 2%;
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+}
+
+.caracteristicas .item button{
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0px 7px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.sobre-imovel input[type="text"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #121212;
+    border: #5c647671 solid 2px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.botao-enviar{
+    text-align: center;
+}
+
+form input[type="submit"]{
+    color: #fff;
+    background-color: #3b85df;
+    padding: 10px 36px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+form input[type="submit"]:hover{
+    background-color: #0f0;
+    transition: all ease 300ms;
+    font-size: 24px;
+}

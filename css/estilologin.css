@@ -36,7 +36,23 @@ p {
     margin-bottom: 0;
     line-height: 0;
 }
+.btn{
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--azulqnemaisazul);
+    padding: 5px 19px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--azulqnemaisazul);
+    transition: 0.8s;
+}
+.btn:hover{
+    color: var(--cor1);
+    background-color: #000000;
 
+}
 .descrição{
     color: var(--preto);
     font-size: 13px;

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styleprincipal.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Document</title>
+    </head>
+    <body id="body">
+        <br><br>
+
+        <div class="centraliza-form">
+            <form class="formpro" action="">
+
+                <br>
+
+                <div class="input-file">
+                    <input type="file">
+                </div>
+    
+                <div class="info">
+                    <a class="adobgl">Localização</a>
+                    <br><br>
+                    <ul>
+                        <li>
+                            <img src="../img/carro.png" alt="carro">
+                            <input type="number" name="" id="" class="input-pequeno" placeholder="0">
+                            <p> vaga(s)</p>
+                        </li>
+                        <li>
+                            <img src="../img/regua.png" alt="regua">
+                            <input type="number" name="" id="" class="input-grande" placeholder="0">
+                            <p> m²</p>
+                        </li>
+                        <li>
+                            <img src="../img/cama.png" alt="cama">
+                            <input type="number" name="" id="" class="input-pequeno" placeholder="0">
+                            <p> quarto(s)</p>
+                        </li>
+                        <li>
+                            <img src="../img/chuveiro.png" alt="chuveiro">
+                            <input type="number" name="" id="" class="input-pequeno" placeholder="0">
+                            <p> banheiro(s)</p>
+                        </li>
+                        <li>
+                            <img src="../img/sol.png" alt="sol" class="sol">
+                            <input type="radio" id="Norte" name="lado-sol" value="Norte">
+                            <label for="Norte">Norte</label>
+                            <input type="radio" id="Leste" name="lado-sol" value="Leste">
+                            <label for="Leste">Leste</label>
+                            <input type="radio" id="Sul" name="lado-sol" value="Sul">
+                            <label for="Sul">Sul</label><br>
+                            <input type="radio" id="Oeste" name="lado-sol" value="Oeste">
+                            <label for="Oeste">Oeste</label>
+                        </li>
+                    </ul>
+                </div>
+        
+                <br>
+        
+                
+                <div class="dados">
+                    <input class="tipo-imovel" type="text" name="" placeholder="Tipo de imovel">
+                    <br>
+                    <div class="bairro-cidade">
+                        <input type="text" name="" placeholder="Bairro">
+                        <p>-</p>
+                        <input type="text" name="" id="" placeholder="Cidade">
+                    </div>
+                    <h4>Cód: #XXXXX</h4>
+                </div>
+                <div class="preco">
+                    <a>Venda</a>
+                    <br><br>
+                    <div class="preco-inline">
+                        <h3 class="RS">R$</h3>
+                        <input type="number" name="" id="">
+                    </div>
+                </div>
+                <hr class="hr-divisao">
+                
+                <br><br><br>
+        
+                <div class="caracteristicas">
+                  <h2>Principais características</h2>
+        
+                  <br>
+        
+                  <div class="item" id="informacoes">
+                    <img src="../img/certo.svg" alt="certo">
+                    <input type="text" name="" id="">
+                  </div>
+
+                  <div class="item">
+                    <button type="button" class="" onclick="adicionarLinha()">+</button>
+                  </div>
+                  
+                  <div class="item">
+                    <button type="button" class="" onclick="removerLinha()">-</button>
+                  </div>
+    
+                </div>
+                
+                <div class="sobre-imovel">
+                  <h2>Sobre o imóvel</h2>
+                  <input type="text" name="" id="" placeholder="Ex: SOBRADO COM: * Ótima localização * 2 Dormitórios * Sala * Cozinha * 1 Banheiro social * Sacada * Churrasqueira * Piso laminado e cerâmico">
+                </div>
+    
+                <div class="botao-enviar">
+                    <input type="submit" value="Enviar para validação">
+                </div>
+    
+            </form>
+        </div>
+
+        <br>
+        <script src="../js/addlinha.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
