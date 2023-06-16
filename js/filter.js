@@ -63,6 +63,12 @@ const filters = [...new Set(btns.map((btn)=>
         image: '../img/casa5.png',
         localizacao: 'rua da felicidade 545',
         price: '290.000',
+        casaouapto: '',
+        m2: '',
+        banheiros: '',
+        qntandares: '',
+        qntdormitorios: '',
+        vagascarro: '',
         category: 'cadeirante'
     }
 ]
@@ -70,10 +76,22 @@ const filters = [...new Set(btns.map((btn)=>
 const categories = [...new Set(product.map((item)=>
     {return item}))]
 
+const filteritems = (a)=>{
+    const flterCategories = categories.filter(item);
+    function item(value){
+        if(value.id==a){
+            return(
+                value.id
+            )
+        }
+    }
+    displayItem(flterCategories)
+}
+
 const displayItem = (items) => {
     document.getElementById('root').innerHTML = items.map((item)=>
     {
-        var {image, title, price, localizacao} = item;
+        var {image, m2, price, localizacao, casaouapto, qntandares, qntdormitorios, banheiros, m2, vagascarro} = item;
         return(
             `
             <div class='card'>
@@ -86,32 +104,32 @@ const displayItem = (items) => {
                 </div>
                 <div class='cardtxt'>
                   <h2>${localizacao}</h2>
-                  <h3>M²</h3>
+                  <h3>${m2}</h3>
                   <h3>${price}</h3>
                 </div> 
               </div> 
               <div class='info'><!--tudo aq fica no hover-->
                   <div class='descricoes'>
-                  <h1>Rua *******</h1>
+                  <h1>${casaouapto}</h1>
                     <div class='uncdesc'>
                       <i class='fa-solid fa-bed'></i>
-                      <p>1 Dormitório</p>
+                      <p>${qntdormitorios}</p>
                     </div>
                     <div class='uncdesc'>
                       <i class='fa-solid fa-car'></i>
-                      <p>2 Vagas</p>
+                      <p>${vagascarro}</p>
                     </div>
                     <div class='uncdesc'>
                       <i class='fa-regular fa-building'></i>
-                      <p>4° Andar</p>
+                      <p>${qntandares}</p>
                     </div>
                     <div class='uncdesc'>
                       <i class='fa-solid fa-shower'></i>
-                      <p>1 Chuveiro</p>
+                      <p>${banheiros}</p>
                     </div>
                     <div class='uncdesc'>
                       <i class='fa-solid fa-maximize'></i>
-                      <p>72m²</p>
+                      <p>${m2}</p>
                     </div>
                     <div class='uncdesc' id='centraliza'>
                       <a href=''><button class='button'>Saiba Mais</button></a>
