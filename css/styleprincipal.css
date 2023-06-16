@@ -178,10 +178,10 @@ legend::after{
     transition: .4s all ease;
     background-color: aliceblue;
 }
-.switch .switch-wrap input:checked + span {
+.switch .switch-wrap input:focus + span {
     background-color: var(--cor2);
 }
-.switch .switch-wrap input:checked + .botaocheckbox::before{
+.switch .switch-wrap input:focus + .botaocheckbox::before{
     transform: translateX(20px);
 }
 /*imoveisavenda*/
