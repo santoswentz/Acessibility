@@ -41,7 +41,8 @@ const filters = [...new Set(btns.map((btn)=>
         qntandares: '1',
         qntdormitorios: '2',
         vagascarro: '',
-        category: 'deficienciavisual'
+        category: 'deficienciavisual',
+        icones: '../img/defivisu.png',
     },
     {
         id: 2,
@@ -54,7 +55,8 @@ const filters = [...new Set(btns.map((btn)=>
         qntandares: '1',
         qntdormitorios: '3',
         vagascarro: '1',
-        category: 'gigantismo'
+        category: 'idoso',
+        icones: '../img/velho.png',
     },
     {
       id: 2,
@@ -67,10 +69,11 @@ const filters = [...new Set(btns.map((btn)=>
       qntandares: '1',
       qntdormitorios: '3',
       vagascarro: '1',
-      category: 'gigantismo'
+      category: 'idoso',
+      icones: '../img/velho.png',
   },
     {
-        id: 3,
+        id: 5,
         image: '../img/casa3.png',
         localizacao: 'rua da assombração 987',
         price: '300.000',
@@ -80,7 +83,8 @@ const filters = [...new Set(btns.map((btn)=>
         qntandares: '1',
         qntdormitorios: '3',
         vagascarro: '2',
-        category: 'nanismo'
+        category: 'cadeirante',
+        icones:'../img/incapacidade.png',
     },
     {
         id: 4,
@@ -93,7 +97,8 @@ const filters = [...new Set(btns.map((btn)=>
         qntandares: '1',
         qntdormitorios: '3',
         vagascarro: '2',
-        category: 'gigantismo'
+        category: 'gigantismo',
+        icones: '../img/alturabig.png',
     },
     {
         id: 4,
@@ -106,7 +111,8 @@ const filters = [...new Set(btns.map((btn)=>
         qntandares: '1',
         qntdormitorios: '3',
         vagascarro: '2',
-        category: 'cadeirante'
+        category: 'gigantismo',
+        icones: '../img/alturabig.png',
     }
 ]
 

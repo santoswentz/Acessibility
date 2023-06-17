@@ -255,6 +255,10 @@ legend::after{
     z-index: unset;
     height: 35px !important;
     width: 35px !important;
+    padding-left: 10px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: var(--cor2);
 }
 .card:hover .imoveldesc{
     opacity: 0;
