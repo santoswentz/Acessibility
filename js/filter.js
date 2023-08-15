@@ -47,7 +47,7 @@ const filters = [...new Set(btns.map((btn)=>
     {
         id: 2,
         image: '../img/casa2.jpg',
-        localizacao: 'rua da abobrinha 321',
+        localizacao: 'Rua da abobrinha 321',
         price: '130.000',
         casaouapto: '2', /* casa = 1 apto = 2 */
         m2: '65',
@@ -61,7 +61,7 @@ const filters = [...new Set(btns.map((btn)=>
     {
       id: 2,
       image: '../img/casa2.jpg',
-      localizacao: 'rua da abobrinha 341',
+      localizacao: 'Rua da abobrinha 341',
       price: '130.000',
       casaouapto: '2', /* casa = 1 apto = 2 */
       m2: '65',
@@ -75,7 +75,7 @@ const filters = [...new Set(btns.map((btn)=>
     {
         id: 5,
         image: '../img/casa3.png',
-        localizacao: 'rua da assombração 987',
+        localizacao: 'Rua da assombração 987',
         price: '300.000',
         casaouapto: '1', /* casa = 1 apto = 2 */
         m2: '150',
@@ -89,7 +89,7 @@ const filters = [...new Set(btns.map((btn)=>
     {
         id: 4,
         image: '../img/casa4.jpg',
-        localizacao: 'rua da conceição 678',
+        localizacao: 'Rua da conceição 678',
         price: '390.000',
         casaouapto: '1', /* casa = 1 apto = 2 */
         m2: '150',
@@ -103,7 +103,7 @@ const filters = [...new Set(btns.map((btn)=>
     {
         id: 4,
         image: '../img/casa5.png',
-        localizacao: 'rua da felicidade 545',
+        localizacao: 'Rua da felicidade 545',
         price: '290.000',
         casaouapto: '1', /* casa = 1 apto = 2 */
         m2: '150',
